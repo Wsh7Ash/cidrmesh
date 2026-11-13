@@ -1,0 +1,10 @@
+{
+  "parent": "10.20.0.0/16",
+  "blocks": [
+    { "cidr": "10.20.1.0/24", "label": "web" },
+    { "cidr": "10.20.2.0/25", "label": "db" },
+    { "cidr": "10.20.2.128/25", "label": "cache" },
+    { "cidr": "10.20.3.0/24", "label": "workers" },
+    { "cidr": "10.20.3.0/25", "label": "workers-legacy" }
+  ]
+}

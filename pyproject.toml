@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cidrmesh"
+version = "1.0.0"
+description = "Offline CIDR overlap checker, free-space finder and subnet allocator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["networking", "cidr", "subnet", "ipam"]
+dependencies = []
+
+[project.scripts]
+cidrmesh = "cidrmesh.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
